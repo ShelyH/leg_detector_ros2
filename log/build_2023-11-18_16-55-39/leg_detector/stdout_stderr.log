@@ -1,0 +1,90 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+-- Found leg_detector_msgs: 0.0.0 (/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/hhd/legdet_ws/src/leg_detector/include
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/hhd/legdet_ws/build/leg_detector
+[ 22%] Built target inflated_human_scan
+[ 55%] Built target local_occupancy_grid_mapping
+[100%] Built target detect_leg_clusters
+-- Install configuration: ""
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/detect_leg_clusters
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/local_occupancy_grid_mapping
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/inflated_human_scan
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch/demo_stationary_simple_environment.launch.py
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_moving_super_crowded2.rviz
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment2.rviz
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment.rviz
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_cluttered_environment.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_moving_super_crowded.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_simple_environment.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_2.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_6_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_4_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_3.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_1.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_7_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_7.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_6.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_4.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_3.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_2.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_1.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_5.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_3_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_2_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_9.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_4.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_1_extracted.bag
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config/trained_leg_detector_res=0.33.yaml
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/joint_leg_tracker.py
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/package_run_dependencies/leg_detector
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/parent_prefix_path/leg_detector
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.sh
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.sh
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.dsv
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.bash
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.sh
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.zsh
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.dsv
+-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.dsv
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/packages/leg_detector
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig.cmake
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig-version.cmake
+-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.xml

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/src/**",
+                "/opt/ros/galactic/include/**",
+                "/usr/include/**",
+                "${workspaceFolder}/install/leg_detector_msgs/include/**",
+                "${workspaceFolder}/install/leg_detector/**",
+                "${workspaceFolder}/install/people_msgs/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

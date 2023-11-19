@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from people_msgs/msg/Person.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module people_msgs {
+  module msg {
+    struct Person {
+      string name;
+
+      geometry_msgs::msg::Point position;
+
+      geometry_msgs::msg::Point velocity;
+
+      double reliability;
+
+      sequence<string> tagnames;
+
+      sequence<string> tags;
+    };
+  };
+};

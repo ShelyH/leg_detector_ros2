@@ -1,0 +1,2 @@
+source;share/leg_detector/environment/ament_prefix_path.sh
+source;share/leg_detector/environment/path.sh

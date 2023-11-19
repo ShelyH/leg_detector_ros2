@@ -1,0 +1,29 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from people_msgs/msg/PositionMeasurement.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+#include "std_msgs/msg/Header.idl"
+
+module people_msgs {
+  module msg {
+    typedef double double__9[9];
+    struct PositionMeasurement {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " The name of the detector that detected the person (i.e frontalface, profileface)")
+      string name;
+
+      string object_id;
+
+      geometry_msgs::msg::Point pos;
+
+      double reliability;
+
+      double__9 covariance;
+
+      octet initialization;
+    };
+  };
+};

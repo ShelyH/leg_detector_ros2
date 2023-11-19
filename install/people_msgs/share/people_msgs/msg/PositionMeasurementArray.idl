@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from people_msgs/msg/PositionMeasurementArray.msg
+// generated code does not contain a copyright notice
+
+#include "people_msgs/msg/PositionMeasurement.idl"
+#include "std_msgs/msg/Header.idl"
+
+module people_msgs {
+  module msg {
+    struct PositionMeasurementArray {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        " All of the people found")
+      sequence<people_msgs::msg::PositionMeasurement> people;
+
+      @verbatim (language="comment", text=
+        " The co-occurrence matrix between people")
+      sequence<float> cooccurrence;
+    };
+  };
+};

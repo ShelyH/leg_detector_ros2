@@ -1,0 +1,8 @@
+msg/Leg.idl
+msg/Leg.msg
+msg/LegArray.idl
+msg/LegArray.msg
+msg/Person.idl
+msg/Person.msg
+msg/PersonArray.idl
+msg/PersonArray.msg

@@ -1,0 +1,9 @@
+{
+  "package_name": "leg_detector_msgs",
+  "non_idl_tuples": [
+    "/home/hhd/legdet_ws/src/leg_detector_msgs:msg/Leg.msg",
+    "/home/hhd/legdet_ws/src/leg_detector_msgs:msg/LegArray.msg",
+    "/home/hhd/legdet_ws/src/leg_detector_msgs:msg/Person.msg",
+    "/home/hhd/legdet_ws/src/leg_detector_msgs:msg/PersonArray.msg"
+  ]
+}

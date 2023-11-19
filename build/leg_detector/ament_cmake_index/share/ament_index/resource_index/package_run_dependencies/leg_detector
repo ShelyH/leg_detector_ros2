@@ -1,0 +1,1 @@
+rclcpp;leg_detector_msgs;sensor_msgs;OpenCV 3.4.12;tf2;tf2_geometry_msgs;tf2_ros;visualization_msgs;nav_msgs;message_filters;ament_lint_auto;ament_lint_common

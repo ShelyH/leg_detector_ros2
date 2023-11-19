@@ -1,0 +1,4 @@
+source;share/leg_detector/local_setup.bash
+source;share/leg_detector/local_setup.dsv
+source;share/leg_detector/local_setup.sh
+source;share/leg_detector/local_setup.zsh

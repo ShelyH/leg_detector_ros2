@@ -1,0 +1,10 @@
+msg/People.idl
+msg/People.msg
+msg/Person.idl
+msg/Person.msg
+msg/PersonStamped.idl
+msg/PersonStamped.msg
+msg/PositionMeasurement.idl
+msg/PositionMeasurement.msg
+msg/PositionMeasurementArray.idl
+msg/PositionMeasurementArray.msg

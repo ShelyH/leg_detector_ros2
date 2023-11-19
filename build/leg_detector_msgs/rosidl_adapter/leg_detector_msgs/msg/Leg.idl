@@ -1,0 +1,17 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from leg_detector_msgs/msg/Leg.msg
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Point.idl"
+
+module leg_detector_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      " Position and confidence of a leg")
+    struct Leg {
+      geometry_msgs::msg::Point position;
+
+      float confidence;
+    };
+  };
+};

@@ -1,0 +1,4 @@
+/home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs:msg/Leg.idl
+/home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs:msg/LegArray.idl
+/home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs:msg/Person.idl
+/home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs:msg/PersonArray.idl
