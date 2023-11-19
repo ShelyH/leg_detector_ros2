@@ -1,4 +1,4 @@
-# ros2_leg_detector
+# leg_detector_ros2
 
 This repository is developed for Mowito Obstacle Detection and Human Detection module in ROS2 Foxy Foxtrot.
 
