@@ -6,10 +6,15 @@ To run Leg detector in ROS2 ensure you have OpenCV 3.4.12 installed
 
 Here are the steps to Run leg_detector in ros2
 
+    
 1.  clone the repository 
+
+    `$> git clone https://github.com/ShelyH/leg_detector_ros2.git`
+
 2. build the code with the following command
 
     `$> colcon build`
+
 3. source the newly buit package
 
     `$> source <path to ros2_leg_detector>/install/setup.bash`
