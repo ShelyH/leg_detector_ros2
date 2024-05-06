@@ -20,16 +20,48 @@ namespace msg
 namespace builder
 {
 
+class Init_Person_vy
+{
+public:
+  explicit Init_Person_vy(::leg_detector_msgs::msg::Person & msg)
+  : msg_(msg)
+  {}
+  ::leg_detector_msgs::msg::Person vy(::leg_detector_msgs::msg::Person::_vy_type arg)
+  {
+    msg_.vy = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::leg_detector_msgs::msg::Person msg_;
+};
+
+class Init_Person_vx
+{
+public:
+  explicit Init_Person_vx(::leg_detector_msgs::msg::Person & msg)
+  : msg_(msg)
+  {}
+  Init_Person_vy vx(::leg_detector_msgs::msg::Person::_vx_type arg)
+  {
+    msg_.vx = std::move(arg);
+    return Init_Person_vy(msg_);
+  }
+
+private:
+  ::leg_detector_msgs::msg::Person msg_;
+};
+
 class Init_Person_id
 {
 public:
   explicit Init_Person_id(::leg_detector_msgs::msg::Person & msg)
   : msg_(msg)
   {}
-  ::leg_detector_msgs::msg::Person id(::leg_detector_msgs::msg::Person::_id_type arg)
+  Init_Person_vx id(::leg_detector_msgs::msg::Person::_id_type arg)
   {
     msg_.id = std::move(arg);
-    return std::move(msg_);
+    return Init_Person_vx(msg_);
   }
 
 private:

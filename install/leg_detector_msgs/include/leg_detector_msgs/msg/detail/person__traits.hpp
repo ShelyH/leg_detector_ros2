@@ -41,6 +41,26 @@ inline void to_yaml(
     value_to_yaml(msg.id, out);
     out << "\n";
   }
+
+  // member: vx
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "vx: ";
+    value_to_yaml(msg.vx, out);
+    out << "\n";
+  }
+
+  // member: vy
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "vy: ";
+    value_to_yaml(msg.vy, out);
+    out << "\n";
+  }
 }  // NOLINT(readability/fn_size)
 
 inline std::string to_yaml(const leg_detector_msgs::msg::Person & msg)

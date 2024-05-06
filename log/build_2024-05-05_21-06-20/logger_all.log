@@ -1,0 +1,223 @@
+[0.272s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.273s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7fd114272880>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7fd114272880>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7fd1140cb340>)
+[0.484s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.485s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.485s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/hhd/legdet_ws'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.501s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.502s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.503s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extensions ['ignore', 'ignore_ament_install']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extension 'ignore'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extension 'ignore_ament_install'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extensions ['colcon_pkg']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extension 'colcon_pkg'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extensions ['colcon_meta']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extension 'colcon_meta'
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extensions ['ros']
+[0.504s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector) by extension 'ros'
+[0.508s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leg_detector' with type 'ros.ament_cmake' and name 'leg_detector'
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.508s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extension 'ignore'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extension 'ignore_ament_install'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extensions ['colcon_pkg']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extension 'colcon_pkg'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extensions ['colcon_meta']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extension 'colcon_meta'
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extensions ['ros']
+[0.509s] Level 1:colcon.colcon_core.package_identification:_identify(src/leg_detector_msgs) by extension 'ros'
+[0.509s] DEBUG:colcon.colcon_core.package_identification:Package 'src/leg_detector_msgs' with type 'ros.ament_cmake' and name 'leg_detector_msgs'
+[0.509s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.510s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.531s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.531s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.534s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/hhd/legdet_ws/install
+[0.534s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/hhd/drl_ros2/turtlebot3_drlnav/install
+[0.535s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/hhd/.ros2_ws/install
+[0.537s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 361 installed packages in /opt/ros/galactic
+[0.541s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_target' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.664s] Level 5:colcon.colcon_core.verb:set package 'leg_detector_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'leg_detector_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hhd/legdet_ws/build/leg_detector_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hhd/legdet_ws/install/leg_detector_msgs', 'merge_install': False, 'path': '/home/hhd/legdet_ws/src/leg_detector_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_target' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_clean_cache' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_clean_first' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'cmake_force_configure' from command line to 'False'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'ament_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'catkin_cmake_args' from command line to 'None'
+[0.665s] Level 5:colcon.colcon_core.verb:set package 'leg_detector' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.665s] DEBUG:colcon.colcon_core.verb:Building package 'leg_detector' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/hhd/legdet_ws/build/leg_detector', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/hhd/legdet_ws/install/leg_detector', 'merge_install': False, 'path': '/home/hhd/legdet_ws/src/leg_detector', 'symlink_install': False, 'test_result_base': None}
+[0.665s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.667s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.667s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hhd/legdet_ws/src/leg_detector_msgs' with build type 'ament_cmake'
+[0.667s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hhd/legdet_ws/src/leg_detector_msgs'
+[0.671s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.671s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.671s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.694s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hhd/legdet_ws/build/leg_detector_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector_msgs -- -j12 -l12
+[1.155s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hhd/legdet_ws/build/leg_detector_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector_msgs -- -j12 -l12
+[1.356s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hhd/legdet_ws/build/leg_detector_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector_msgs
+[1.438s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leg_detector_msgs)
+[1.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hhd/legdet_ws/build/leg_detector_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector_msgs
+[1.442s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs' for CMake module files
+[1.442s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs' for CMake config files
+[1.443s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'cmake_prefix_path')
+[1.443s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.ps1'
+[1.444s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.dsv'
+[1.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.sh'
+[1.445s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib'
+[1.445s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'ld_library_path_lib')
+[1.446s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.ps1'
+[1.446s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.dsv'
+[1.447s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.sh'
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/bin'
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/pkgconfig/leg_detector_msgs.pc'
+[1.447s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages'
+[1.447s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'pythonpath')
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.ps1'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.dsv'
+[1.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.sh'
+[1.449s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/bin'
+[1.449s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.ps1'
+[1.450s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.dsv'
+[1.451s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.sh'
+[1.452s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.bash'
+[1.453s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.zsh'
+[1.454s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hhd/legdet_ws/install/leg_detector_msgs/share/colcon-core/packages/leg_detector_msgs)
+[1.593s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leg_detector_msgs)
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs' for CMake module files
+[1.595s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs' for CMake config files
+[1.596s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'cmake_prefix_path')
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.ps1'
+[1.597s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.dsv'
+[1.598s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/cmake_prefix_path.sh'
+[1.599s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib'
+[1.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'ld_library_path_lib')
+[1.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.ps1'
+[1.600s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.dsv'
+[1.600s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/ld_library_path_lib.sh'
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/bin'
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/pkgconfig/leg_detector_msgs.pc'
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages'
+[1.601s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector_msgs', 'pythonpath')
+[1.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.ps1'
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.dsv'
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/hook/pythonpath.sh'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector_msgs/bin'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.dsv'
+[1.605s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.sh'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.bash'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.zsh'
+[1.607s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hhd/legdet_ws/install/leg_detector_msgs/share/colcon-core/packages/leg_detector_msgs)
+[1.607s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/hhd/legdet_ws/src/leg_detector' with build type 'ament_cmake'
+[1.608s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/hhd/legdet_ws/src/leg_detector'
+[1.608s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.608s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.634s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hhd/legdet_ws/build/leg_detector': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector -- -j12 -l12
+[1.758s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hhd/legdet_ws/build/leg_detector' returned '0': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector -- -j12 -l12
+[1.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/hhd/legdet_ws/build/leg_detector': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector
+[1.840s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leg_detector)
+[1.841s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector' for CMake module files
+[1.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/hhd/legdet_ws/build/leg_detector' returned '0': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector' for CMake config files
+[1.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector', 'cmake_prefix_path')
+[1.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.ps1'
+[1.845s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.dsv'
+[1.845s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.sh'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/bin'
+[1.846s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib/pkgconfig/leg_detector.pc'
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib/python3.8/site-packages'
+[1.847s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/bin'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.ps1'
+[1.848s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.dsv'
+[1.849s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.sh'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.bash'
+[1.850s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.zsh'
+[1.851s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hhd/legdet_ws/install/leg_detector/share/colcon-core/packages/leg_detector)
+[1.910s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(leg_detector)
+[1.910s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector' for CMake module files
+[1.911s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector' for CMake config files
+[1.912s] Level 1:colcon.colcon_core.shell:create_environment_hook('leg_detector', 'cmake_prefix_path')
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.ps1'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.dsv'
+[1.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/hook/cmake_prefix_path.sh'
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib'
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/bin'
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib/pkgconfig/leg_detector.pc'
+[1.915s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/lib/python3.8/site-packages'
+[1.916s] Level 1:colcon.colcon_core.environment:checking '/home/hhd/legdet_ws/install/leg_detector/bin'
+[1.916s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.ps1'
+[1.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.dsv'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.sh'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.bash'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package script '/home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.zsh'
+[1.920s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/hhd/legdet_ws/install/leg_detector/share/colcon-core/packages/leg_detector)
+[1.920s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[1.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[1.921s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[1.921s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[1.932s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[1.932s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[1.932s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[1.954s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[1.955s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hhd/legdet_ws/install/local_setup.ps1'
+[1.957s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hhd/legdet_ws/install/_local_setup_util_ps1.py'
+[1.959s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hhd/legdet_ws/install/setup.ps1'
+[1.961s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hhd/legdet_ws/install/local_setup.sh'
+[1.962s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/hhd/legdet_ws/install/_local_setup_util_sh.py'
+[1.963s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hhd/legdet_ws/install/setup.sh'
+[1.965s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hhd/legdet_ws/install/local_setup.bash'
+[1.966s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hhd/legdet_ws/install/setup.bash'
+[1.968s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/hhd/legdet_ws/install/local_setup.zsh'
+[1.969s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/hhd/legdet_ws/install/setup.zsh'

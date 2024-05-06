@@ -1,0 +1,490 @@
+[0.017s] Invoking command in '/home/hhd/legdet_ws/build/leg_detector': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector -- -j12 -l12
+[0.051s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.075s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.145s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[0.148s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.151s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.286s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.306s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.358s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.360s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.376s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.508s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[0.508s] -- Found leg_detector_msgs: 0.0.0 (/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake)
+[0.619s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[0.691s] -- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)
+[0.700s] -- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[0.706s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[1.066s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[1.136s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[1.214s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[1.280s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.282s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.282s] -- Configured cppcheck include dirs: /home/hhd/legdet_ws/src/leg_detector/include
+[1.282s] -- Configured cppcheck exclude dirs and/or files: 
+[1.284s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.284s] -- Configured cpplint exclude dirs and/or files: 
+[1.284s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.285s] -- Added test 'lint_cmake' to check CMake code style
+[1.285s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[1.287s] -- Added test 'uncrustify' to check C / C++ code style
+[1.287s] -- Configured uncrustify additional arguments: 
+[1.287s] -- Added test 'xmllint' to check XML markup files
+[1.290s] -- Configuring done
+[1.321s] -- Generating done
+[1.323s] -- Build files have been written to: /home/hhd/legdet_ws/build/leg_detector
+[1.361s] [35m[1mScanning dependencies of target detect_leg_clusters[0m
+[1.362s] [35m[1mScanning dependencies of target local_occupancy_grid_mapping[0m
+[1.363s] [35m[1mScanning dependencies of target inflated_human_scan[0m
+[1.394s] [ 11%] [32mBuilding CXX object CMakeFiles/inflated_human_scan.dir/src/inflated_human_scan.cpp.o[0m
+[1.410s] [ 22%] [32mBuilding CXX object CMakeFiles/detect_leg_clusters.dir/src/detect_leg_clusters.cpp.o[0m
+[1.418s] [ 33%] [32mBuilding CXX object CMakeFiles/local_occupancy_grid_mapping.dir/src/local_occupancy_grid_mapping.cpp.o[0m
+[3.785s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:[m[K In constructor ‘[01m[KOccupancyGridMapping::OccupancyGridMapping()[m[K’:
+[3.785s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:62:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.785s]    62 |         this->declare_parameter("scan_topic"[01;35m[K)[m[K;
+[3.785s]       |                                             [01;35m[K^[m[K
+[3.786s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.786s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.787s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.787s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.787s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.787s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.787s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:63:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.787s]    63 |         this->declare_parameter("fixed_frame"[01;35m[K)[m[K;
+[3.787s]       |                                              [01;35m[K^[m[K
+[3.787s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.788s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.788s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.788s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.789s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.789s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.789s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:64:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.789s]    64 |         this->declare_parameter("base_frame"[01;35m[K)[m[K;
+[3.789s]       |                                             [01;35m[K^[m[K
+[3.789s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.789s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.789s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.789s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.789s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.789s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.790s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.790s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.790s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.790s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.790s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.790s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:65:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.790s]    65 |         this->declare_parameter("local_map_topic"[01;35m[K)[m[K;
+[3.790s]       |                                                  [01;35m[K^[m[K
+[3.790s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.790s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.790s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.791s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.791s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.791s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.791s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.791s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.791s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.791s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.791s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.791s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:66:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.791s]    66 |         this->declare_parameter("local_map_resolution"[01;35m[K)[m[K;
+[3.791s]       |                                                       [01;35m[K^[m[K
+[3.792s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.792s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.792s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.792s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.792s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.792s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.793s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:67:59:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.793s]    67 |         this->declare_parameter("local_map_cells_per_side"[01;35m[K)[m[K;
+[3.793s]       |                                                           [01;35m[K^[m[K
+[3.793s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.793s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.793s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.794s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.794s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.794s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.794s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:68:70:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.794s]    68 |         this->declare_parameter("invalid_measurements_are_free_space"[01;35m[K)[m[K;
+[3.794s]       |                                                                      [01;35m[K^[m[K
+[3.794s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.794s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.794s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.794s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.794s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.794s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.795s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.795s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.795s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.795s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.795s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.795s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:69:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.795s]    69 |         this->declare_parameter("unseen_is_free_space"[01;35m[K)[m[K;
+[3.795s]       |                                                       [01;35m[K^[m[K
+[3.795s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.795s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.795s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.796s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.796s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.796s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.796s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.796s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.796s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.796s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.796s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.796s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:70:64:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.796s]    70 |         this->declare_parameter("use_scan_header_stamp_for_tfs"[01;35m[K)[m[K;
+[3.796s]       |                                                                [01;35m[K^[m[K
+[3.797s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.797s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.797s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.797s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.797s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.797s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.797s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:71:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.798s]    71 |         this->declare_parameter("shift_threshold"[01;35m[K)[m[K;
+[3.798s]       |                                                  [01;35m[K^[m[K
+[3.798s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.798s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.798s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.798s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.799s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.799s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.799s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:72:53:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.799s]    72 |         this->declare_parameter("reliable_inf_range"[01;35m[K)[m[K;
+[3.799s]       |                                                     [01;35m[K^[m[K
+[3.799s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.799s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.800s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.800s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.800s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.800s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.800s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:73:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.800s]    73 |         this->declare_parameter("cluster_dist_euclid"[01;35m[K)[m[K;
+[3.800s]       |                                                      [01;35m[K^[m[K
+[3.800s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.800s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.800s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.800s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.800s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.801s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.801s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.801s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.801s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.801s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.801s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.801s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:74:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.801s]    74 |         this->declare_parameter("min_points_per_cluster"[01;35m[K)[m[K;
+[3.801s]       |                                                         [01;35m[K^[m[K
+[3.801s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.802s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.802s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.802s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.802s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[3.802s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[3.804s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:[m[K In member function ‘[01m[Kvoid OccupancyGridMapping::laserAndLegCallback(const ConstSharedPtr&, const ConstSharedPtr&)[m[K’:
+[3.805s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:177:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.805s]   177 |                 buffer_->canTransform(fixed_frame_, scan_msg->header.frame_id, tf_time, rclcpp::Duration(1.0[01;35m[K)[m[K);
+[3.805s]       |                                                                                                             [01;35m[K^[m[K
+[3.805s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.805s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.806s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.806s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.806s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.806s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[3.807s]       |            [01;36m[K^~~~~~~~[m[K
+[3.807s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:179:113:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[3.807s]   179 |                     buffer_->canTransform(fixed_frame_, scan_msg->header.frame_id, tf_time, rclcpp::Duration(1.0[01;35m[K)[m[K);
+[3.807s]       |                                                                                                                 [01;35m[K^[m[K
+[3.807s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[3.807s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/tf2/impl/utils.h:18[m[K,
+[3.808s]                  from [01m[K/opt/ros/galactic/include/tf2/utils.h:20[m[K,
+[3.808s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3[m[K:
+[3.808s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[3.809s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[3.809s]       |            [01;36m[K^~~~~~~~[m[K
+[4.001s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:[m[K In constructor ‘[01m[KDetectLegClusters::DetectLegClusters()[m[K’:
+[4.002s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:38:45:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.002s]    38 |         this->declare_parameter("scan_topic"[01;35m[K)[m[K;
+[4.002s]       |                                             [01;35m[K^[m[K
+[4.002s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.002s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.002s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.002s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.002s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.003s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.003s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.003s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.003s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.003s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:39:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.003s]    39 |         this->declare_parameter("fixed_frame"[01;35m[K)[m[K;
+[4.003s]       |                                              [01;35m[K^[m[K
+[4.003s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.004s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.004s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.004s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.004s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.004s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.004s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.004s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.004s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.004s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:40:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.005s]    40 |         this->declare_parameter("forest_file"[01;35m[K)[m[K;
+[4.005s]       |                                              [01;35m[K^[m[K
+[4.005s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.005s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.005s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.005s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.005s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.005s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.006s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.006s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.006s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.006s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:41:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.006s]    41 |         this->declare_parameter("detection_threshold"[01;35m[K)[m[K;
+[4.006s]       |                                                      [01;35m[K^[m[K
+[4.006s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.006s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.007s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.007s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.007s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.007s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.007s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.007s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.007s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.007s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:42:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.007s]    42 |         this->declare_parameter("cluster_dist_euclid"[01;35m[K)[m[K;
+[4.008s]       |                                                      [01;35m[K^[m[K
+[4.008s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.008s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.008s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.008s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.008s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.008s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.009s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.009s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.009s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.009s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:43:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.009s]    43 |         this->declare_parameter("min_points_per_cluster"[01;35m[K)[m[K;
+[4.009s]       |                                                         [01;35m[K^[m[K
+[4.009s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.010s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.010s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.010s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.010s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.010s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:44:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.010s]    44 |         this->declare_parameter("max_detect_distance"[01;35m[K)[m[K;
+[4.010s]       |                                                      [01;35m[K^[m[K
+[4.010s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.010s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.010s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.010s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.011s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.011s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.011s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:45:58:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.011s]    45 |         this->declare_parameter("marker_display_lifetime"[01;35m[K)[m[K;
+[4.011s]       |                                                          [01;35m[K^[m[K
+[4.011s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.011s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.011s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.011s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.011s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.011s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.011s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.011s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.011s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.011s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:46:64:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.011s]    46 |         this->declare_parameter("use_scan_header_stamp_for_tfs"[01;35m[K)[m[K;
+[4.011s]       |                                                                [01;35m[K^[m[K
+[4.011s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.012s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.012s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.012s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.012s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.012s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:47:56:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.012s]    47 |         this->declare_parameter("max_detected_clusters"[01;35m[K)[m[K;
+[4.012s]       |                                                        [01;35m[K^[m[K
+[4.012s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.012s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.012s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.012s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.012s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.013s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[4.025s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:[m[K In member function ‘[01m[Kvoid DetectLegClusters::laserCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.026s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:164:109:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.026s]   164 |                 buffer_->lookupTransform(fixed_frame_, scan->header.frame_id, tf_time1, rclcpp::Duration(1.0[01;35m[K)[m[K);
+[4.026s]       |                                                                                                             [01;35m[K^[m[K
+[4.026s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[4.026s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[4.026s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[4.026s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[4.026s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[4.027s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.028s]                  from [01m[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43[m[K,
+[4.028s]                  from [01m[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38[m[K,
+[4.028s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3[m[K:
+[4.028s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.028s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[4.028s]       |            [01;36m[K^~~~~~~~[m[K
+[4.176s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:[m[K In constructor ‘[01m[KInflatedHumanScanNode::InflatedHumanScanNode()[m[K’:
+[4.176s] [01m[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:28:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[4.176s]    28 |         this->declare_parameter("inflation_radius"[01;35m[K)[m[K;
+[4.176s]       |                                                   [01;35m[K^[m[K
+[4.176s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[4.177s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[4.177s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[4.177s]                  from [01m[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:1[m[K:
+[4.177s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[4.177s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[4.177s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[10.353s] [ 44%] [32m[1mLinking CXX executable detect_leg_clusters[0m
+[10.938s] [ 66%] Built target detect_leg_clusters
+[13.013s] [ 77%] [32m[1mLinking CXX executable inflated_human_scan[0m
+[13.173s] [ 88%] [32m[1mLinking CXX executable local_occupancy_grid_mapping[0m
+[13.575s] [ 88%] Built target inflated_human_scan
+[13.887s] [100%] Built target local_occupancy_grid_mapping
+[13.903s] Invoked command in '/home/hhd/legdet_ws/build/leg_detector' returned '0': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector -- -j12 -l12
+[13.954s] Invoking command in '/home/hhd/legdet_ws/build/leg_detector': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector
+[13.962s] -- Install configuration: ""
+[13.962s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/detect_leg_clusters
+[13.965s] -- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/detect_leg_clusters" to ""
+[13.965s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/local_occupancy_grid_mapping
+[13.970s] -- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/local_occupancy_grid_mapping" to ""
+[13.970s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/inflated_human_scan
+[13.974s] -- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/inflated_human_scan" to ""
+[13.974s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch/demo_stationary_simple_environment.launch.py
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_moving_super_crowded2.rviz
+[13.975s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment2.rviz
+[13.976s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment.rviz
+[13.976s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_cluttered_environment.bag
+[13.976s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_moving_super_crowded.bag
+[13.976s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_simple_environment.bag
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_2.bag
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_6_extracted.bag
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_4_extracted.bag
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_3.bag
+[13.977s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_1.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_7_extracted.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_7.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_6.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_4.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_3.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_2.bag
+[13.978s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_1.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_5.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_3_extracted.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_2_extracted.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_9.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_4.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_1_extracted.bag
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config/trained_leg_detector_res=0.33.yaml
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/joint_leg_tracker.py
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/package_run_dependencies/leg_detector
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/parent_prefix_path/leg_detector
+[13.979s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.sh
+[13.980s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.dsv
+[13.980s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.sh
+[13.980s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.dsv
+[13.980s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.bash
+[13.980s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.sh
+[13.980s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.zsh
+[13.980s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.dsv
+[13.980s] -- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.dsv
+[13.980s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/packages/leg_detector
+[13.981s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig.cmake
+[13.981s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig-version.cmake
+[13.981s] -- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.xml
+[13.982s] Invoked command in '/home/hhd/legdet_ws/build/leg_detector' returned '0': CMAKE_PREFIX_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) LD_LIBRARY_PATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib PYTHONPATH=/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/hhd/legdet_ws/build/leg_detector

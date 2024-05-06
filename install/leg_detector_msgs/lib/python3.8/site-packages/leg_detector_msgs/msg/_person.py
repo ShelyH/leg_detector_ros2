@@ -59,16 +59,22 @@ class Person(metaclass=Metaclass_Person):
     __slots__ = [
         '_pose',
         '_id',
+        '_vx',
+        '_vy',
     ]
 
     _fields_and_field_types = {
         'pose': 'geometry_msgs/Pose',
         'id': 'uint32',
+        'vx': 'float',
+        'vy': 'float',
     }
 
     SLOT_TYPES = (
         rosidl_parser.definition.NamespacedType(['geometry_msgs', 'msg'], 'Pose'),  # noqa: E501
         rosidl_parser.definition.BasicType('uint32'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
+        rosidl_parser.definition.BasicType('float'),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
@@ -78,6 +84,8 @@ class Person(metaclass=Metaclass_Person):
         from geometry_msgs.msg import Pose
         self.pose = kwargs.get('pose', Pose())
         self.id = kwargs.get('id', int())
+        self.vx = kwargs.get('vx', float())
+        self.vy = kwargs.get('vy', float())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -111,6 +119,10 @@ class Person(metaclass=Metaclass_Person):
         if self.pose != other.pose:
             return False
         if self.id != other.id:
+            return False
+        if self.vx != other.vx:
+            return False
+        if self.vy != other.vy:
             return False
         return True
 
@@ -147,3 +159,29 @@ class Person(metaclass=Metaclass_Person):
             assert value >= 0 and value < 4294967296, \
                 "The 'id' field must be an unsigned integer in [0, 4294967295]"
         self._id = value
+
+    @property
+    def vx(self):
+        """Message field 'vx'."""
+        return self._vx
+
+    @vx.setter
+    def vx(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vx' field must be of type 'float'"
+        self._vx = value
+
+    @property
+    def vy(self):
+        """Message field 'vy'."""
+        return self._vy
+
+    @vy.setter
+    def vy(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, float), \
+                "The 'vy' field must be of type 'float'"
+        self._vy = value

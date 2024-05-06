@@ -1,0 +1,967 @@
+[0.000000] (-) TimerEvent: {}
+[0.000545] (leg_detector_msgs) JobQueued: {'identifier': 'leg_detector_msgs', 'dependencies': OrderedDict()}
+[0.000632] (leg_detector) JobQueued: {'identifier': 'leg_detector', 'dependencies': OrderedDict([('leg_detector_msgs', '/home/hhd/legdet_ws/install/leg_detector_msgs')])}
+[0.000723] (leg_detector_msgs) JobStarted: {'identifier': 'leg_detector_msgs'}
+[0.011849] (leg_detector_msgs) JobProgress: {'identifier': 'leg_detector_msgs', 'progress': 'cmake'}
+[0.013145] (leg_detector_msgs) JobProgress: {'identifier': 'leg_detector_msgs', 'progress': 'build'}
+[0.014778] (leg_detector_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hhd/legdet_ws/build/leg_detector_msgs', '--', '-j12', '-l12'], 'cwd': '/home/hhd/legdet_ws/build/leg_detector_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(peopleros2)'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hhd'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1839'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hhd'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><DontRoute>true</></></></>'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](peopleros2) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2693'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hhd/legdet_ws/install:/home/hhd/drl_ros2/turtlebot3_drlnav/install:/home/hhd/.ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hhd'), ('JOURNAL_STREAM', '8:50592'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hhd'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/galactic/share/turtlebot3_gazebo/models:/opt/ros/galactic/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/anaconda3/bin:/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/.local/bin:/home/hhd/anaconda3/bin:/opt/ros/galactic/bin:/home/hhd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hhd:@/tmp/.ICE-unix/1903,unix/hhd:/tmp/.ICE-unix/1903'), ('INVOCATION_ID', '6a2de08db06b42689439a1b4760d8e45'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c441ba12c9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/qr_track_alvar:/home/hhd/.ros2_ws/install/openslam_gmapping:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/hhd/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'peopleros2'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hhd/legdet_ws/build/leg_detector_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hhd/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/hhd/anaconda3/envs/peopleros2'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic')]), 'shell': False}
+[0.053805] (leg_detector_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.077982] (leg_detector_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.078220] (leg_detector_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099637] (-) TimerEvent: {}
+[0.146801] (leg_detector_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[0.149650] (leg_detector_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.152632] (leg_detector_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.200182] (-) TimerEvent: {}
+[0.300666] (-) TimerEvent: {}
+[0.309569] (leg_detector_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.328622] (leg_detector_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)\n'}
+[0.400763] (-) TimerEvent: {}
+[0.412479] (leg_detector_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.500877] (-) TimerEvent: {}
+[0.600842] (leg_detector_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[0.601024] (-) TimerEvent: {}
+[0.701298] (-) TimerEvent: {}
+[0.801621] (-) TimerEvent: {}
+[0.840904] (leg_detector_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.901764] (-) TimerEvent: {}
+[0.939675] (leg_detector_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.966154] (leg_detector_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.966540] (leg_detector_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[0.995174] (leg_detector_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.995493] (leg_detector_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.995676] (leg_detector_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[1.001887] (-) TimerEvent: {}
+[1.102247] (-) TimerEvent: {}
+[1.133351] (leg_detector_msgs) StdoutLine: {'line': b'-- Using numpy include directory: /home/hhd/.local/lib/python3.8/site-packages/numpy/core/include\n'}
+[1.155332] (leg_detector_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.202399] (-) TimerEvent: {}
+[1.203204] (leg_detector_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.205852] (leg_detector_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/hhd/legdet_ws/build/leg_detector_msgs\n'}
+[1.247162] (leg_detector_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.265507] (leg_detector_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.302516] (-) TimerEvent: {}
+[1.402807] (-) TimerEvent: {}
+[1.503126] (-) TimerEvent: {}
+[1.594798] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_generator_c\x1b[0m\n'}
+[1.602964] (leg_detector_msgs) StdoutLine: {'line': b'[  3%] Built target leg_detector_msgs__cpp\n'}
+[1.603166] (-) TimerEvent: {}
+[1.606897] (leg_detector_msgs) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_generator_c.dir/rosidl_generator_c/leg_detector_msgs/msg/detail/person__functions.c.o\x1b[0m\n'}
+[1.607563] (leg_detector_msgs) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_generator_c.dir/rosidl_generator_c/leg_detector_msgs/msg/detail/person_array__functions.c.o\x1b[0m\n'}
+[1.612271] (leg_detector_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_generator_c.dir/rosidl_generator_c/leg_detector_msgs/msg/detail/leg__functions.c.o\x1b[0m\n'}
+[1.614498] (leg_detector_msgs) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.614701] (leg_detector_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_generator_c.dir/rosidl_generator_c/leg_detector_msgs/msg/detail/leg_array__functions.c.o\x1b[0m\n'}
+[1.619186] (leg_detector_msgs) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.620907] (leg_detector_msgs) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.662549] (leg_detector_msgs) StdoutLine: {'line': b'[ 18%] \x1b[32m\x1b[1mLinking C shared library libleg_detector_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[1.700604] (leg_detector_msgs) StdoutLine: {'line': b'[ 18%] Built target leg_detector_msgs__rosidl_generator_c\n'}
+[1.703295] (-) TimerEvent: {}
+[1.710484] (leg_detector_msgs) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.714432] (leg_detector_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.803410] (-) TimerEvent: {}
+[1.866082] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.882225] (leg_detector_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/leg_detector_msgs/msg/leg__type_support.cpp.o\x1b[0m\n'}
+[1.884385] (leg_detector_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/leg_detector_msgs/msg/leg_array__type_support.cpp.o\x1b[0m\n'}
+[1.884615] (leg_detector_msgs) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/leg_detector_msgs/msg/person__type_support.cpp.o\x1b[0m\n'}
+[1.886248] (leg_detector_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/leg_detector_msgs/msg/person_array__type_support.cpp.o\x1b[0m\n'}
+[1.903528] (-) TimerEvent: {}
+[1.928895] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.947527] (leg_detector_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/leg_detector_msgs/msg/detail/leg__type_support.cpp.o\x1b[0m\n'}
+[1.947788] (leg_detector_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/leg_detector_msgs/msg/detail/person__type_support.cpp.o\x1b[0m\n'}
+[1.947937] (leg_detector_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/leg_detector_msgs/msg/detail/leg_array__type_support.cpp.o\x1b[0m\n'}
+[1.958738] (leg_detector_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/leg_detector_msgs/msg/detail/person_array__type_support.cpp.o\x1b[0m\n'}
+[2.003666] (-) TimerEvent: {}
+[2.039672] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[2.073788] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[2.089438] (leg_detector_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/leg_detector_msgs/msg/detail/dds_fastrtps/leg__type_support.cpp.o\x1b[0m\n'}
+[2.103803] (-) TimerEvent: {}
+[2.104555] (leg_detector_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/leg_detector_msgs/msg/leg__type_support.cpp.o\x1b[0m\n'}
+[2.120461] (leg_detector_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/leg_detector_msgs/msg/detail/dds_fastrtps/leg_array__type_support.cpp.o\x1b[0m\n'}
+[2.131029] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[2.153212] (leg_detector_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/leg_detector_msgs/msg/detail/leg__type_support.c.o\x1b[0m\n'}
+[2.203942] (-) TimerEvent: {}
+[2.234773] (leg_detector_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/leg_detector_msgs/msg/leg_array__type_support.cpp.o\x1b[0m\n'}
+[2.239000] (leg_detector_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/leg_detector_msgs/msg/detail/leg_array__type_support.c.o\x1b[0m\n'}
+[2.254854] (leg_detector_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/leg_detector_msgs/msg/detail/person__type_support.c.o\x1b[0m\n'}
+[2.266769] (leg_detector_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/leg_detector_msgs/msg/detail/dds_fastrtps/person__type_support.cpp.o\x1b[0m\n'}
+[2.272642] (leg_detector_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/leg_detector_msgs/msg/detail/dds_fastrtps/person_array__type_support.cpp.o\x1b[0m\n'}
+[2.284033] (leg_detector_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/leg_detector_msgs/msg/person__type_support.cpp.o\x1b[0m\n'}
+[2.285494] (leg_detector_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libleg_detector_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.299777] (leg_detector_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/leg_detector_msgs/msg/detail/person_array__type_support.c.o\x1b[0m\n'}
+[2.304082] (-) TimerEvent: {}
+[2.321818] (leg_detector_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/leg_detector_msgs/msg/person_array__type_support.cpp.o\x1b[0m\n'}
+[2.346161] (leg_detector_msgs) StdoutLine: {'line': b'[ 60%] Built target leg_detector_msgs__rosidl_typesupport_cpp\n'}
+[2.352304] (leg_detector_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libleg_detector_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[2.361922] (leg_detector_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libleg_detector_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.398923] (leg_detector_msgs) StdoutLine: {'line': b'[ 63%] Built target leg_detector_msgs__rosidl_typesupport_introspection_c\n'}
+[2.404224] (-) TimerEvent: {}
+[2.415758] (leg_detector_msgs) StdoutLine: {'line': b'[ 63%] Built target leg_detector_msgs__rosidl_typesupport_c\n'}
+[2.419393] (leg_detector_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libleg_detector_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[2.504354] (-) TimerEvent: {}
+[2.507041] (leg_detector_msgs) StdoutLine: {'line': b'[ 65%] Built target leg_detector_msgs__rosidl_typesupport_introspection_cpp\n'}
+[2.604509] (-) TimerEvent: {}
+[2.704915] (-) TimerEvent: {}
+[2.718908] (leg_detector_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libleg_detector_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[2.805039] (-) TimerEvent: {}
+[2.819452] (leg_detector_msgs) StdoutLine: {'line': b'[ 67%] Built target leg_detector_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[2.832283] (leg_detector_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.905158] (-) TimerEvent: {}
+[3.005471] (-) TimerEvent: {}
+[3.105809] (-) TimerEvent: {}
+[3.125271] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[3.144030] (leg_detector_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/leg_detector_msgs/msg/detail/leg__type_support_c.cpp.o\x1b[0m\n'}
+[3.146025] (leg_detector_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/leg_detector_msgs/msg/detail/person_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.146239] (leg_detector_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/leg_detector_msgs/msg/detail/leg_array__type_support_c.cpp.o\x1b[0m\n'}
+[3.148360] (leg_detector_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/leg_detector_msgs/msg/detail/person__type_support_c.cpp.o\x1b[0m\n'}
+[3.205949] (-) TimerEvent: {}
+[3.306309] (-) TimerEvent: {}
+[3.406644] (-) TimerEvent: {}
+[3.487106] (leg_detector_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libleg_detector_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.506770] (-) TimerEvent: {}
+[3.591716] (leg_detector_msgs) StdoutLine: {'line': b'[ 78%] Built target leg_detector_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.606910] (-) TimerEvent: {}
+[3.620482] (leg_detector_msgs) StdoutLine: {'line': b'[ 78%] Built target leg_detector_msgs\n'}
+[3.652728] (leg_detector_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.707061] (-) TimerEvent: {}
+[3.807583] (-) TimerEvent: {}
+[3.908065] (-) TimerEvent: {}
+[4.008822] (-) TimerEvent: {}
+[4.109169] (-) TimerEvent: {}
+[4.209518] (-) TimerEvent: {}
+[4.233959] (leg_detector_msgs) StdoutLine: {'line': b'[ 80%] Built target leg_detector_msgs__py\n'}
+[4.251473] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__python\x1b[0m\n'}
+[4.280226] (leg_detector_msgs) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__python.dir/rosidl_generator_py/leg_detector_msgs/msg/_leg_s.c.o\x1b[0m\n'}
+[4.281580] (leg_detector_msgs) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__python.dir/rosidl_generator_py/leg_detector_msgs/msg/_leg_array_s.c.o\x1b[0m\n'}
+[4.286171] (leg_detector_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__python.dir/rosidl_generator_py/leg_detector_msgs/msg/_person_s.c.o\x1b[0m\n'}
+[4.286414] (leg_detector_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__python.dir/rosidl_generator_py/leg_detector_msgs/msg/_person_array_s.c.o\x1b[0m\n'}
+[4.309645] (-) TimerEvent: {}
+[4.399170] (leg_detector_msgs) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/leg_detector_msgs/libleg_detector_msgs__python.so\x1b[0m\n'}
+[4.409782] (-) TimerEvent: {}
+[4.453196] (leg_detector_msgs) StdoutLine: {'line': b'[ 89%] Built target leg_detector_msgs__python\n'}
+[4.468601] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[4.468801] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[4.468893] (leg_detector_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target leg_detector_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[4.484226] (leg_detector_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/leg_detector_msgs/_leg_detector_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.490062] (leg_detector_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/leg_detector_msgs/_leg_detector_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.490661] (leg_detector_msgs) StdoutLine: {'line': b'[ 94%] \x1b[32mBuilding C object CMakeFiles/leg_detector_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/leg_detector_msgs/_leg_detector_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.509895] (-) TimerEvent: {}
+[4.570662] (leg_detector_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.572747] (leg_detector_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.580087] (leg_detector_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.610031] (-) TimerEvent: {}
+[4.610528] (leg_detector_msgs) StdoutLine: {'line': b'[100%] Built target leg_detector_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[4.616772] (leg_detector_msgs) StdoutLine: {'line': b'[100%] Built target leg_detector_msgs__rosidl_typesupport_c__pyext\n'}
+[4.638433] (leg_detector_msgs) StdoutLine: {'line': b'[100%] Built target leg_detector_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.653877] (leg_detector_msgs) CommandEnded: {'returncode': 0}
+[4.710164] (-) TimerEvent: {}
+[4.749550] (leg_detector_msgs) JobProgress: {'identifier': 'leg_detector_msgs', 'progress': 'install'}
+[4.760142] (leg_detector_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hhd/legdet_ws/build/leg_detector_msgs'], 'cwd': '/home/hhd/legdet_ws/build/leg_detector_msgs', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(peopleros2)'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hhd'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1839'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hhd'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><DontRoute>true</></></></>'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](peopleros2) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2693'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hhd/legdet_ws/install:/home/hhd/drl_ros2/turtlebot3_drlnav/install:/home/hhd/.ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hhd'), ('JOURNAL_STREAM', '8:50592'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hhd'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/galactic/share/turtlebot3_gazebo/models:/opt/ros/galactic/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/anaconda3/bin:/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/.local/bin:/home/hhd/anaconda3/bin:/opt/ros/galactic/bin:/home/hhd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hhd:@/tmp/.ICE-unix/1903,unix/hhd:/tmp/.ICE-unix/1903'), ('INVOCATION_ID', '6a2de08db06b42689439a1b4760d8e45'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c441ba12c9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/qr_track_alvar:/home/hhd/.ros2_ws/install/openslam_gmapping:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/hhd/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'peopleros2'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hhd/legdet_ws/build/leg_detector_msgs'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hhd/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/hhd/anaconda3/envs/peopleros2'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic')]), 'shell': False}
+[4.773022] (leg_detector_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.773423] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/ament_index/resource_index/rosidl_interfaces/leg_detector_msgs\n'}
+[4.773576] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.773707] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.773835] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/leg.h\n'}
+[4.773961] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.774088] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.774560] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__functions.c\n'}
+[4.774697] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__type_support.h\n'}
+[4.774822] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__functions.h\n'}
+[4.774946] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__functions.c\n'}
+[4.775085] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__struct.h\n'}
+[4.775211] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__functions.c\n'}
+[4.775338] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__struct.h\n'}
+[4.775458] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__struct.h\n'}
+[4.775585] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__struct.h\n'}
+[4.775705] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__functions.h\n'}
+[4.775825] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__type_support.h\n'}
+[4.775961] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__type_support.h\n'}
+[4.776089] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__functions.h\n'}
+[4.776216] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__functions.c\n'}
+[4.776336] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__functions.h\n'}
+[4.776581] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__type_support.h\n'}
+[4.776730] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/person.h\n'}
+[4.776858] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/person_array.h\n'}
+[4.777026] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/leg_array.h\n'}
+[4.777156] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/library_path.sh\n'}
+[4.777286] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/library_path.dsv\n'}
+[4.777485] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_generator_c.so\n'}
+[4.777613] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_generator_c.so" to ""\n'}
+[4.777785] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.777917] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.778039] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.778166] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.778290] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__rosidl_typesupport_fastrtps_c.h\n'}
+[4.778410] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__rosidl_typesupport_fastrtps_c.h\n'}
+[4.778605] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h\n'}
+[4.778739] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__rosidl_typesupport_fastrtps_c.h\n'}
+[4.778926] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[4.779062] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.779192] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.779321] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.779536] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.779670] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.779798] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.779927] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/dds_fastrtps\n'}
+[4.780123] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.780251] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.780382] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.780510] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.780635] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.780789] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.780916] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.781107] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.781262] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.781411] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__rosidl_typesupport_introspection_c.h\n'}
+[4.781531] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__type_support.c\n'}
+[4.781628] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h\n'}
+[4.781701] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__type_support.c\n'}
+[4.781765] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__type_support.c\n'}
+[4.781834] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__type_support.c\n'}
+[4.781929] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__rosidl_typesupport_introspection_c.h\n'}
+[4.781985] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__rosidl_typesupport_introspection_c.h\n'}
+[4.782043] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_introspection_c.so\n'}
+[4.782100] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.782156] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_c.so\n'}
+[4.782213] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_c.so" to ""\n'}
+[4.782269] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.782325] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.782382] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/leg_array.hpp\n'}
+[4.782440] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/leg.hpp\n'}
+[4.782495] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/person_array.hpp\n'}
+[4.782550] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.782607] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__struct.hpp\n'}
+[4.782663] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__builder.hpp\n'}
+[4.782720] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__traits.hpp\n'}
+[4.782788] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__traits.hpp\n'}
+[4.782844] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__struct.hpp\n'}
+[4.782900] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__builder.hpp\n'}
+[4.782955] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__builder.hpp\n'}
+[4.783010] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__struct.hpp\n'}
+[4.783066] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__traits.hpp\n'}
+[4.783122] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__traits.hpp\n'}
+[4.783179] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__builder.hpp\n'}
+[4.783235] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__struct.hpp\n'}
+[4.783290] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/person.hpp\n'}
+[4.783350] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs\n'}
+[4.783404] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg\n'}
+[4.783464] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail\n'}
+[4.783520] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.783576] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__type_support.cpp\n'}
+[4.783643] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__type_support.cpp\n'}
+[4.783700] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__type_support.cpp\n'}
+[4.783755] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg_array__type_support.cpp\n'}
+[4.783811] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.783867] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/person_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.783923] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/include/leg_detector_msgs/msg/detail/leg__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.783979] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[4.784034] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.784094] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_cpp.so\n'}
+[4.784151] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[4.784207] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/pythonpath.sh\n'}
+[4.784267] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/pythonpath.dsv\n'}
+[4.784323] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/__init__.py\n'}
+[4.810283] (-) TimerEvent: {}
+[4.811718] (leg_detector_msgs) StdoutLine: {'line': b"Compiling '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/__init__.py'...\n"}
+[4.818079] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg\n'}
+[4.818407] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_leg.py\n'}
+[4.818562] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_leg_s.c\n'}
+[4.818694] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_leg_array.py\n'}
+[4.818821] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_person_s.c\n'}
+[4.819003] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_person_array_s.c\n'}
+[4.819202] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_person_array.py\n'}
+[4.819347] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_leg_array_s.c\n'}
+[4.819536] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/__init__.py\n'}
+[4.819664] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/msg/_person.py\n'}
+[4.819781] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.820103] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.820493] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.821124] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.821515] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[4.822067] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages/leg_detector_msgs/leg_detector_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[4.822258] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__python.so\n'}
+[4.822636] (leg_detector_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector_msgs/lib/libleg_detector_msgs__python.so" to ""\n'}
+[4.822837] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/Leg.idl\n'}
+[4.822957] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/LegArray.idl\n'}
+[4.823084] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/Person.idl\n'}
+[4.823262] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/PersonArray.idl\n'}
+[4.823406] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/Leg.msg\n'}
+[4.823591] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/LegArray.msg\n'}
+[4.823749] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/Person.msg\n'}
+[4.823880] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/msg/PersonArray.msg\n'}
+[4.824001] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/ament_index/resource_index/package_run_dependencies/leg_detector_msgs\n'}
+[4.824286] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/ament_index/resource_index/parent_prefix_path/leg_detector_msgs\n'}
+[4.824576] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/ament_prefix_path.sh\n'}
+[4.824835] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/ament_prefix_path.dsv\n'}
+[4.824980] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/path.sh\n'}
+[4.825123] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/environment/path.dsv\n'}
+[4.825266] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/local_setup.bash\n'}
+[4.825409] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/local_setup.sh\n'}
+[4.825551] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/local_setup.zsh\n'}
+[4.825691] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/local_setup.dsv\n'}
+[4.825835] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.dsv\n'}
+[4.826087] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/ament_index/resource_index/packages/leg_detector_msgs\n'}
+[4.826237] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_generator_cExport.cmake\n'}
+[4.826510] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.826659] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.826807] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.826952] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_cExport.cmake\n'}
+[4.827188] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.827323] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_generator_cppExport.cmake\n'}
+[4.827445] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.827562] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.827683] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[4.827803] (leg_detector_msgs) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.827925] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[4.828049] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.828168] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.828383] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.828517] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.829009] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.829414] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.829546] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgsConfig.cmake\n'}
+[4.829676] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake/leg_detector_msgsConfig-version.cmake\n'}
+[4.829802] (leg_detector_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/package.xml\n'}
+[4.830246] (leg_detector_msgs) CommandEnded: {'returncode': 0}
+[4.910464] (-) TimerEvent: {}
+[4.983963] (leg_detector_msgs) JobEnded: {'identifier': 'leg_detector_msgs', 'rc': 0}
+[4.985039] (leg_detector) JobStarted: {'identifier': 'leg_detector'}
+[4.996390] (leg_detector) JobProgress: {'identifier': 'leg_detector', 'progress': 'cmake'}
+[4.997329] (leg_detector) JobProgress: {'identifier': 'leg_detector', 'progress': 'build'}
+[4.998803] (leg_detector) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/hhd/legdet_ws/build/leg_detector', '--', '-j12', '-l12'], 'cwd': '/home/hhd/legdet_ws/build/leg_detector', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(peopleros2)'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hhd'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1839'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hhd'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><DontRoute>true</></></></>'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](peopleros2) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2693'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hhd/legdet_ws/install:/home/hhd/drl_ros2/turtlebot3_drlnav/install:/home/hhd/.ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hhd'), ('JOURNAL_STREAM', '8:50592'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hhd'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/galactic/share/turtlebot3_gazebo/models:/opt/ros/galactic/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/anaconda3/bin:/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/.local/bin:/home/hhd/anaconda3/bin:/opt/ros/galactic/bin:/home/hhd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hhd:@/tmp/.ICE-unix/1903,unix/hhd:/tmp/.ICE-unix/1903'), ('INVOCATION_ID', '6a2de08db06b42689439a1b4760d8e45'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c441ba12c9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/qr_track_alvar:/home/hhd/.ros2_ws/install/openslam_gmapping:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/hhd/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'peopleros2'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hhd/legdet_ws/build/leg_detector'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hhd/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/hhd/anaconda3/envs/peopleros2'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic')]), 'shell': False}
+[5.010574] (-) TimerEvent: {}
+[5.028152] (leg_detector) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[5.053682] (leg_detector) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.110709] (-) TimerEvent: {}
+[5.117723] (leg_detector) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[5.122908] (leg_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[5.125831] (leg_detector) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[5.211100] (-) TimerEvent: {}
+[5.271565] (leg_detector) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.292762] (leg_detector) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[5.311410] (-) TimerEvent: {}
+[5.341716] (leg_detector) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[5.343586] (leg_detector) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[5.360014] (leg_detector) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[5.411520] (-) TimerEvent: {}
+[5.486480] (leg_detector) StdoutLine: {'line': b'-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[5.486803] (leg_detector) StdoutLine: {'line': b'-- Found leg_detector_msgs: 0.0.0 (/home/hhd/legdet_ws/install/leg_detector_msgs/share/leg_detector_msgs/cmake)\n'}
+[5.511640] (-) TimerEvent: {}
+[5.592327] (leg_detector) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[5.611757] (-) TimerEvent: {}
+[5.659419] (leg_detector) StdoutLine: {'line': b'-- Found tf2: 0.17.5 (/opt/ros/galactic/share/tf2/cmake)\n'}
+[5.669361] (leg_detector) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.17.5 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)\n'}
+[5.674679] (leg_detector) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)\n'}
+[5.711898] (-) TimerEvent: {}
+[5.812247] (-) TimerEvent: {}
+[5.912846] (-) TimerEvent: {}
+[6.013201] (-) TimerEvent: {}
+[6.036574] (leg_detector) StdoutLine: {'line': b'-- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)\n'}
+[6.100622] (leg_detector) StdoutLine: {'line': b'-- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)\n'}
+[6.113325] (-) TimerEvent: {}
+[6.171920] (leg_detector) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[6.213487] (-) TimerEvent: {}
+[6.233217] (leg_detector) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[6.235078] (leg_detector) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[6.235525] (leg_detector) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/hhd/legdet_ws/src/leg_detector/include\n'}
+[6.235698] (leg_detector) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[6.237144] (leg_detector) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[6.237332] (leg_detector) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[6.237537] (leg_detector) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.238077] (leg_detector) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.238511] (leg_detector) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[6.240044] (leg_detector) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[6.240287] (leg_detector) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[6.240478] (leg_detector) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.243173] (leg_detector) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.271332] (leg_detector) StdoutLine: {'line': b'-- Generating done\n'}
+[6.273046] (leg_detector) StdoutLine: {'line': b'-- Build files have been written to: /home/hhd/legdet_ws/build/leg_detector\n'}
+[6.306836] (leg_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target detect_leg_clusters\x1b[0m\n'}
+[6.311046] (leg_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target inflated_human_scan\x1b[0m\n'}
+[6.311384] (leg_detector) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target local_occupancy_grid_mapping\x1b[0m\n'}
+[6.313583] (-) TimerEvent: {}
+[6.344434] (leg_detector) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding CXX object CMakeFiles/inflated_human_scan.dir/src/inflated_human_scan.cpp.o\x1b[0m\n'}
+[6.347148] (leg_detector) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/detect_leg_clusters.dir/src/detect_leg_clusters.cpp.o\x1b[0m\n'}
+[6.347349] (leg_detector) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/local_occupancy_grid_mapping.dir/src/local_occupancy_grid_mapping.cpp.o\x1b[0m\n'}
+[6.413724] (-) TimerEvent: {}
+[6.514064] (-) TimerEvent: {}
+[6.614400] (-) TimerEvent: {}
+[6.714743] (-) TimerEvent: {}
+[6.815097] (-) TimerEvent: {}
+[6.915524] (-) TimerEvent: {}
+[7.015893] (-) TimerEvent: {}
+[7.116345] (-) TimerEvent: {}
+[7.216787] (-) TimerEvent: {}
+[7.317092] (-) TimerEvent: {}
+[7.417407] (-) TimerEvent: {}
+[7.517777] (-) TimerEvent: {}
+[7.618100] (-) TimerEvent: {}
+[7.718419] (-) TimerEvent: {}
+[7.820792] (-) TimerEvent: {}
+[7.921166] (-) TimerEvent: {}
+[8.021459] (-) TimerEvent: {}
+[8.121807] (-) TimerEvent: {}
+[8.222145] (-) TimerEvent: {}
+[8.322503] (-) TimerEvent: {}
+[8.422837] (-) TimerEvent: {}
+[8.523181] (-) TimerEvent: {}
+[8.623558] (-) TimerEvent: {}
+[8.723916] (-) TimerEvent: {}
+[8.824316] (-) TimerEvent: {}
+[8.924669] (-) TimerEvent: {}
+[9.025037] (-) TimerEvent: {}
+[9.125387] (-) TimerEvent: {}
+[9.225813] (-) TimerEvent: {}
+[9.291766] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KDetectLegClusters::DetectLegClusters()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.292261] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:38:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.292411] (leg_detector) StderrLine: {'line': b'   38 |         this->declare_parameter("scan_topic"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.292504] (leg_detector) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.292602] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.293138] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.293395] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.293505] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.293594] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.293676] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.293750] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.293834] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.293912] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.293996] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:39:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.294133] (leg_detector) StderrLine: {'line': b'   39 |         this->declare_parameter("fixed_frame"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.294221] (leg_detector) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.294298] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.294376] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.294459] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.294571] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.294679] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.294764] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.294847] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.294931] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.295015] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.295096] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:40:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.295206] (leg_detector) StderrLine: {'line': b'   40 |         this->declare_parameter("forest_file"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.295292] (leg_detector) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.295369] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.295456] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.295542] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.295616] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.295692] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.295763] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.295838] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.295910] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.295987] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.296083] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:41:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.296182] (leg_detector) StderrLine: {'line': b'   41 |         this->declare_parameter("detection_threshold"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.296259] (leg_detector) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.296334] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.296411] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.296516] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.296600] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.296682] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.296806] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.296888] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.296976] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.297072] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.297154] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:42:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.297245] (leg_detector) StderrLine: {'line': b'   42 |         this->declare_parameter("cluster_dist_euclid"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.297322] (leg_detector) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.297403] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.297488] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.297574] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.297662] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.297735] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.297815] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.297897] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.297987] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.298066] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.298150] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:43:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.298262] (leg_detector) StderrLine: {'line': b'   43 |         this->declare_parameter("min_points_per_cluster"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.298351] (leg_detector) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.298437] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.298522] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.298601] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.298683] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.298767] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.298851] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.298935] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.299021] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.299104] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.299182] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:44:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.299287] (leg_detector) StderrLine: {'line': b'   44 |         this->declare_parameter("max_detect_distance"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.299364] (leg_detector) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.299439] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.299521] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.299603] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.299690] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.299773] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.299847] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.299924] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.300013] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.300109] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.300194] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:45:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.300295] (leg_detector) StderrLine: {'line': b'   45 |         this->declare_parameter("marker_display_lifetime"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.300384] (leg_detector) StderrLine: {'line': b'      |                                                          \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.300459] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.300542] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.300620] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.300690] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.300827] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.300913] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.300993] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.301080] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.301159] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.301233] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:46:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.301327] (leg_detector) StderrLine: {'line': b'   46 |         this->declare_parameter("use_scan_header_stamp_for_tfs"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.301410] (leg_detector) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.301492] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.301591] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.301679] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.301761] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.301844] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.301918] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.301998] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.302081] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.302159] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.302243] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:47:56:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.302356] (leg_detector) StderrLine: {'line': b'   47 |         this->declare_parameter("max_detected_clusters"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.302438] (leg_detector) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.302524] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.302605] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.302678] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.302752] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.302830] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.302912] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.302991] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.303069] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.303144] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.325944] (-) TimerEvent: {}
+[9.326831] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid DetectLegClusters::laserCallback(sensor_msgs::msg::LaserScan_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.327188] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:164:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Duration::Duration(rcl_duration_value_t)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[9.327316] (leg_detector) StderrLine: {'line': b'  164 |                 buffer_->lookupTransform(fixed_frame_, scan->header.frame_id, tf_time1, rclcpp::Duration(1.0\x1b[01;35m\x1b[K)\x1b[m\x1b[K);\n'}
+[9.327394] (leg_detector) StderrLine: {'line': b'      |                                                                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.327467] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[9.327544] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[9.327629] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[9.327705] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[9.327776] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.327842] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.327912] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.327988] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[9.328065] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[9.328140] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[9.328216] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.328284] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.328351] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.328421] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.328494] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/detect_leg_clusters.cpp:3\x1b[m\x1b[K:\n'}
+[9.328565] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.328638] (leg_detector) StderrLine: {'line': b'   46 |   explicit \x1b[01;36m\x1b[KDuration\x1b[m\x1b[K(rcl_duration_value_t nanoseconds);\n'}
+[9.328774] (leg_detector) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.367015] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KOccupancyGridMapping::OccupancyGridMapping()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.368813] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:62:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.369133] (leg_detector) StderrLine: {'line': b'   62 |         this->declare_parameter("scan_topic"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.369324] (leg_detector) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.369502] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.369676] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.369857] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.370109] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.370322] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.370512] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.370743] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.370975] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.371176] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.371360] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.371546] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.371723] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:63:46:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.371900] (leg_detector) StderrLine: {'line': b'   63 |         this->declare_parameter("fixed_frame"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.372125] (leg_detector) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.372292] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.372413] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.372529] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.372767] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.372927] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.373044] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.373140] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.373197] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.373252] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.373304] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.373358] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.373410] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:64:45:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.373480] (leg_detector) StderrLine: {'line': b'   64 |         this->declare_parameter("base_frame"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.373535] (leg_detector) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.373590] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.373643] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.373698] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.373751] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.373806] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.373858] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.373913] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.373967] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.374032] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.374085] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.374142] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.374197] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:65:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.374303] (leg_detector) StderrLine: {'line': b'   65 |         this->declare_parameter("local_map_topic"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.374409] (leg_detector) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.374511] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.374594] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.374670] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.374749] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.374827] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.374900] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.374972] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.375044] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.375118] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.375203] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.375291] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.375368] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:66:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.375450] (leg_detector) StderrLine: {'line': b'   66 |         this->declare_parameter("local_map_resolution"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.375508] (leg_detector) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.375599] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.375674] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.375732] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.375787] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.375839] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.375893] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.375947] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.376009] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.376074] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.376128] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.376203] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.376258] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:67:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.376332] (leg_detector) StderrLine: {'line': b'   67 |         this->declare_parameter("local_map_cells_per_side"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.376388] (leg_detector) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.376443] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.376496] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.376548] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.376602] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.376660] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.376747] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.376804] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.376857] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.376912] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.376966] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.377020] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.377076] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:68:70:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.377141] (leg_detector) StderrLine: {'line': b'   68 |         this->declare_parameter("invalid_measurements_are_free_space"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.377196] (leg_detector) StderrLine: {'line': b'      |                                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.377247] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.377299] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.377354] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.377418] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.377489] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.377577] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.377681] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.377757] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.377828] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.377882] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.377936] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.377989] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:69:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.378071] (leg_detector) StderrLine: {'line': b'   69 |         this->declare_parameter("unseen_is_free_space"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.378126] (leg_detector) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.378181] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.378233] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.378285] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.378337] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.378391] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.378444] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.378497] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.378552] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.378606] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.378660] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.378714] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.378768] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:70:64:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.378830] (leg_detector) StderrLine: {'line': b'   70 |         this->declare_parameter("use_scan_header_stamp_for_tfs"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.378886] (leg_detector) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.378939] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.379012] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.379097] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.379173] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.379228] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.379281] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.379350] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.379399] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.379449] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.379499] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.379548] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.379596] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:71:50:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.379657] (leg_detector) StderrLine: {'line': b'   71 |         this->declare_parameter("shift_threshold"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.379707] (leg_detector) StderrLine: {'line': b'      |                                                  \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.379758] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.379808] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.379882] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.379963] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.380021] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.380075] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.380128] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.380181] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.380233] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.380300] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.380353] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.380422] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:72:53:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.380498] (leg_detector) StderrLine: {'line': b'   72 |         this->declare_parameter("reliable_inf_range"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.380556] (leg_detector) StderrLine: {'line': b'      |                                                     \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.380611] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.380665] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.380799] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.380896] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.380975] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.381050] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.381124] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.381199] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.381277] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.381371] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.381450] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.381526] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:73:54:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.381627] (leg_detector) StderrLine: {'line': b'   73 |         this->declare_parameter("cluster_dist_euclid"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.381705] (leg_detector) StderrLine: {'line': b'      |                                                      \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.381787] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.381877] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.381951] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.382024] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.382098] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.382173] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.382253] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.382330] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.382407] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.382487] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.382562] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.382637] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:74:57:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.382728] (leg_detector) StderrLine: {'line': b'   74 |         this->declare_parameter("min_points_per_cluster"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.382805] (leg_detector) StderrLine: {'line': b'      |                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.382875] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.382946] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.383014] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.383073] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.383133] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.383194] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.383267] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.383326] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.383385] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.383442] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.383501] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.396920] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid OccupancyGridMapping::laserAndLegCallback(const ConstSharedPtr&, const ConstSharedPtr&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.397401] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:177:109:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Duration::Duration(rcl_duration_value_t)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[9.397568] (leg_detector) StderrLine: {'line': b'  177 |                 buffer_->canTransform(fixed_frame_, scan_msg->header.frame_id, tf_time, rclcpp::Duration(1.0\x1b[01;35m\x1b[K)\x1b[m\x1b[K);\n'}
+[9.397700] (leg_detector) StderrLine: {'line': b'      |                                                                                                             \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.397819] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[9.397938] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[9.398058] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[9.398176] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[9.398302] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.398484] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.398679] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.398820] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[9.398940] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[9.399058] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[9.399177] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.399357] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.399498] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.399679] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.399901] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.400088] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.400275] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.400479] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.400621] (leg_detector) StderrLine: {'line': b'   46 |   explicit \x1b[01;36m\x1b[KDuration\x1b[m\x1b[K(rcl_duration_value_t nanoseconds);\n'}
+[9.400803] (leg_detector) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.400963] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:179:113:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::Duration::Duration(rcl_duration_value_t)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n'}
+[9.401099] (leg_detector) StderrLine: {'line': b'  179 |                     buffer_->canTransform(fixed_frame_, scan_msg->header.frame_id, tf_time, rclcpp::Duration(1.0\x1b[01;35m\x1b[K)\x1b[m\x1b[K);\n'}
+[9.401230] (leg_detector) StderrLine: {'line': b'      |                                                                                                                 \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.401350] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/qos.hpp:20\x1b[m\x1b[K,\n'}
+[9.401471] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31\x1b[m\x1b[K,\n'}
+[9.401597] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:34\x1b[m\x1b[K,\n'}
+[9.401743] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[9.401873] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[9.401996] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[9.402117] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[9.402232] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[9.402349] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[9.402484] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[9.402613] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[9.402737] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.402859] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_ros/buffer_interface.h:43\x1b[m\x1b[K,\n'}
+[9.402983] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2_geometry_msgs/tf2_geometry_msgs.h:38\x1b[m\x1b[K,\n'}
+[9.403115] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/impl/utils.h:18\x1b[m\x1b[K,\n'}
+[9.403242] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/tf2/utils.h:20\x1b[m\x1b[K,\n'}
+[9.403364] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/local_occupancy_grid_mapping.cpp:3\x1b[m\x1b[K:\n'}
+[9.403485] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.403607] (leg_detector) StderrLine: {'line': b'   46 |   explicit \x1b[01;36m\x1b[KDuration\x1b[m\x1b[K(rcl_duration_value_t nanoseconds);\n'}
+[9.403728] (leg_detector) StderrLine: {'line': b'      |            \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[9.426078] (-) TimerEvent: {}
+[9.526429] (-) TimerEvent: {}
+[9.552486] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KInflatedHumanScanNode::InflatedHumanScanNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[9.552829] (leg_detector) StderrLine: {'line': b"\x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:28:51:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)\x1b[m\x1b[K\xe2\x80\x99 is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\\nIf you want to declare a parameter that won't change type without a default value use:\\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\\n\\nIf you want to declare a parameter that can dynamically change type use:\\n```\\nrcl_interfaces::msg::ParameterDescriptor descriptor;\\ndescriptor.dynamic_typing = true;\\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\\n``` [\x1b[01;35m\x1b[K-Wdeprecated-declarations\x1b[m\x1b[K]\n"}
+[9.553018] (leg_detector) StderrLine: {'line': b'   28 |         this->declare_parameter("inflation_radius"\x1b[01;35m\x1b[K)\x1b[m\x1b[K;\n'}
+[9.553136] (leg_detector) StderrLine: {'line': b'      |                                                   \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[9.553247] (leg_detector) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[9.553358] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[9.553462] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[9.553566] (leg_detector) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/hhd/legdet_ws/src/leg_detector/src/inflated_human_scan.cpp:1\x1b[m\x1b[K:\n'}
+[9.553678] (leg_detector) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[9.553780] (leg_detector) StderrLine: {'line': b'  422 |   \x1b[01;36m\x1b[Kdeclare_parameter\x1b[m\x1b[K(const std::string & name);\n'}
+[9.553880] (leg_detector) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[9.626583] (-) TimerEvent: {}
+[9.727043] (-) TimerEvent: {}
+[9.827380] (-) TimerEvent: {}
+[9.927721] (-) TimerEvent: {}
+[10.028109] (-) TimerEvent: {}
+[10.128532] (-) TimerEvent: {}
+[10.228951] (-) TimerEvent: {}
+[10.330042] (-) TimerEvent: {}
+[10.430491] (-) TimerEvent: {}
+[10.530994] (-) TimerEvent: {}
+[10.631401] (-) TimerEvent: {}
+[10.731805] (-) TimerEvent: {}
+[10.832221] (-) TimerEvent: {}
+[10.932610] (-) TimerEvent: {}
+[11.033027] (-) TimerEvent: {}
+[11.133596] (-) TimerEvent: {}
+[11.233957] (-) TimerEvent: {}
+[11.334332] (-) TimerEvent: {}
+[11.434711] (-) TimerEvent: {}
+[11.535092] (-) TimerEvent: {}
+[11.635470] (-) TimerEvent: {}
+[11.735847] (-) TimerEvent: {}
+[11.836200] (-) TimerEvent: {}
+[11.936641] (-) TimerEvent: {}
+[12.036994] (-) TimerEvent: {}
+[12.137298] (-) TimerEvent: {}
+[12.237614] (-) TimerEvent: {}
+[12.337924] (-) TimerEvent: {}
+[12.438236] (-) TimerEvent: {}
+[12.538566] (-) TimerEvent: {}
+[12.638882] (-) TimerEvent: {}
+[12.739202] (-) TimerEvent: {}
+[12.839538] (-) TimerEvent: {}
+[12.939857] (-) TimerEvent: {}
+[13.040207] (-) TimerEvent: {}
+[13.140578] (-) TimerEvent: {}
+[13.240895] (-) TimerEvent: {}
+[13.341204] (-) TimerEvent: {}
+[13.441508] (-) TimerEvent: {}
+[13.541809] (-) TimerEvent: {}
+[13.642104] (-) TimerEvent: {}
+[13.742406] (-) TimerEvent: {}
+[13.842704] (-) TimerEvent: {}
+[13.943005] (-) TimerEvent: {}
+[14.043298] (-) TimerEvent: {}
+[14.143609] (-) TimerEvent: {}
+[14.243896] (-) TimerEvent: {}
+[14.344188] (-) TimerEvent: {}
+[14.444565] (-) TimerEvent: {}
+[14.544868] (-) TimerEvent: {}
+[14.645170] (-) TimerEvent: {}
+[14.745465] (-) TimerEvent: {}
+[14.845763] (-) TimerEvent: {}
+[14.946052] (-) TimerEvent: {}
+[15.046355] (-) TimerEvent: {}
+[15.146668] (-) TimerEvent: {}
+[15.246989] (-) TimerEvent: {}
+[15.310542] (leg_detector) StdoutLine: {'line': b'[ 44%] \x1b[32m\x1b[1mLinking CXX executable detect_leg_clusters\x1b[0m\n'}
+[15.347127] (-) TimerEvent: {}
+[15.447462] (-) TimerEvent: {}
+[15.547808] (-) TimerEvent: {}
+[15.648158] (-) TimerEvent: {}
+[15.748513] (-) TimerEvent: {}
+[15.848791] (-) TimerEvent: {}
+[15.882518] (leg_detector) StdoutLine: {'line': b'[ 66%] Built target detect_leg_clusters\n'}
+[15.948913] (-) TimerEvent: {}
+[16.049234] (-) TimerEvent: {}
+[16.149579] (-) TimerEvent: {}
+[16.249968] (-) TimerEvent: {}
+[16.350291] (-) TimerEvent: {}
+[16.450621] (-) TimerEvent: {}
+[16.550985] (-) TimerEvent: {}
+[16.651325] (-) TimerEvent: {}
+[16.751690] (-) TimerEvent: {}
+[16.852021] (-) TimerEvent: {}
+[16.952361] (-) TimerEvent: {}
+[17.052711] (-) TimerEvent: {}
+[17.153130] (-) TimerEvent: {}
+[17.253579] (-) TimerEvent: {}
+[17.353940] (-) TimerEvent: {}
+[17.454309] (-) TimerEvent: {}
+[17.554637] (-) TimerEvent: {}
+[17.654923] (-) TimerEvent: {}
+[17.755227] (-) TimerEvent: {}
+[17.855592] (-) TimerEvent: {}
+[17.955911] (-) TimerEvent: {}
+[18.056232] (-) TimerEvent: {}
+[18.156572] (-) TimerEvent: {}
+[18.159341] (leg_detector) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX executable inflated_human_scan\x1b[0m\n'}
+[18.256735] (-) TimerEvent: {}
+[18.357172] (-) TimerEvent: {}
+[18.457672] (-) TimerEvent: {}
+[18.558096] (-) TimerEvent: {}
+[18.610041] (leg_detector) StdoutLine: {'line': b'[ 88%] \x1b[32m\x1b[1mLinking CXX executable local_occupancy_grid_mapping\x1b[0m\n'}
+[18.658223] (-) TimerEvent: {}
+[18.758599] (-) TimerEvent: {}
+[18.772381] (leg_detector) StdoutLine: {'line': b'[ 88%] Built target inflated_human_scan\n'}
+[18.858716] (-) TimerEvent: {}
+[18.959064] (-) TimerEvent: {}
+[19.059783] (-) TimerEvent: {}
+[19.160236] (-) TimerEvent: {}
+[19.260590] (-) TimerEvent: {}
+[19.360975] (-) TimerEvent: {}
+[19.378680] (leg_detector) StdoutLine: {'line': b'[100%] Built target local_occupancy_grid_mapping\n'}
+[19.390064] (leg_detector) CommandEnded: {'returncode': 0}
+[19.427952] (leg_detector) JobProgress: {'identifier': 'leg_detector', 'progress': 'install'}
+[19.430619] (leg_detector) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/hhd/legdet_ws/build/leg_detector'], 'cwd': '/home/hhd/legdet_ws/build/leg_detector', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(peopleros2)'), ('LANGUAGE', 'zh_CN:en'), ('USER', 'hhd'), ('LC_TIME', 'zh_CN.UTF-8'), ('SSH_AGENT_PID', '1839'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/hhd/legdet_ws/install/leg_detector_msgs/lib:/home/hhd/legdet_ws/install/people_msgs/lib:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib:/home/hhd/.ros2_ws/install/openslam_gmapping/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('QT4_IM_MODULE', 'fcitx'), ('HOME', '/home/hhd'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('CYCLONEDDS_URI', '<CycloneDDS><Domain><General><DontRoute>true</></></></>'), ('TERM_PROGRAM_VERSION', '1.89.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('PS1', '\\[\x1b]633;A\x07\\](peopleros2) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$ \\[\x1b]633;B\x07\\]'), ('LC_MONETARY', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1672'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '2693'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/hhd/legdet_ws/install:/home/hhd/drl_ros2/turtlebot3_drlnav/install:/home/hhd/.ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('GTK_IM_MODULE', 'fcitx'), ('LOGNAME', 'hhd'), ('JOURNAL_STREAM', '8:50592'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'hhd'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', ':/opt/ros/galactic/share/turtlebot3_gazebo/models:/opt/ros/galactic/share/turtlebot3_gazebo/models'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/anaconda3/bin:/home/hhd/anaconda3/envs/peopleros2/bin:/home/hhd/anaconda3/condabin:/home/hhd/.local/bin:/home/hhd/anaconda3/bin:/opt/ros/galactic/bin:/home/hhd/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/hhd:@/tmp/.ICE-unix/1903,unix/hhd:/tmp/.ICE-unix/1903'), ('INVOCATION_ID', '6a2de08db06b42689439a1b4760d8e45'), ('PAPERSIZE', 'a4'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'zh_CN.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'zh_CN.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('LC_TELEPHONE', 'zh_CN.UTF-8'), ('XMODIFIERS', '@im=fcitx'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c441ba12c9.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/qr_track_alvar:/home/hhd/.ros2_ws/install/openslam_gmapping:/opt/ros/galactic'), ('CONDA_PYTHON_EXE', '/home/hhd/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('LC_NAME', 'zh_CN.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'peopleros2'), ('LC_MEASUREMENT', 'zh_CN.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'zh_CN.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'fcitx'), ('PWD', '/home/hhd/legdet_ws/build/leg_detector'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/hhd/anaconda3/bin/conda'), ('CLUTTER_IM_MODULE', 'fcitx'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/hhd/legdet_ws/install/leg_detector_msgs/lib/python3.8/site-packages:/home/hhd/legdet_ws/install/people_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs/lib/python3.8/site-packages:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl/lib/python3.8/site-packages:/home/hhd/.ros2_ws/install/qr_track_alvar/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'zh_CN.UTF-8'), ('CONDA_PREFIX', '/home/hhd/anaconda3/envs/peopleros2'), ('LC_PAPER', 'zh_CN.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/hhd/legdet_ws/install/leg_detector_msgs:/home/hhd/legdet_ws/install/people_msgs:/home/hhd/legdet_ws/install/leg_detector:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_simulations:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_fake_node:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_msgs:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_gazebo:/home/hhd/.ros2_ws/install/slam_gmapping:/home/hhd/.ros2_ws/install/openslam_gmapping:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic')]), 'shell': False}
+[19.444290] (leg_detector) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[19.444695] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/detect_leg_clusters\n'}
+[19.448067] (leg_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/detect_leg_clusters" to ""\n'}
+[19.448385] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/local_occupancy_grid_mapping\n'}
+[19.452694] (leg_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/local_occupancy_grid_mapping" to ""\n'}
+[19.453048] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/inflated_human_scan\n'}
+[19.457073] (leg_detector) StdoutLine: {'line': b'-- Set runtime path of "/home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/inflated_human_scan" to ""\n'}
+[19.457330] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch\n'}
+[19.457629] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/launch/demo_stationary_simple_environment.launch.py\n'}
+[19.457799] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag\n'}
+[19.457926] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos\n'}
+[19.458040] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz\n'}
+[19.458152] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_moving_super_crowded2.rviz\n'}
+[19.458266] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment2.rviz\n'}
+[19.458377] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/rviz/demo_stationary_simple_environment.rviz\n'}
+[19.458546] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_cluttered_environment.bag\n'}
+[19.458661] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_moving_super_crowded.bag\n'}
+[19.458772] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/demos/demo_stationary_simple_environment.bag\n'}
+[19.458882] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33\n'}
+[19.458996] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_2.bag\n'}
+[19.459109] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_6_extracted.bag\n'}
+[19.459221] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_4_extracted.bag\n'}
+[19.459369] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_3.bag\n'}
+[19.459476] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_1.bag\n'}
+[19.459583] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_7_extracted.bag\n'}
+[19.459690] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted\n'}
+[19.459863] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_7.bag\n'}
+[19.460018] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_6.bag\n'}
+[19.460157] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_4.bag\n'}
+[19.460296] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_3.bag\n'}
+[19.460434] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_2.bag\n'}
+[19.460680] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_1.bag\n'}
+[19.461069] (-) TimerEvent: {}
+[19.461240] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_not_extracted/positive_5.bag\n'}
+[19.463092] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_3_extracted.bag\n'}
+[19.463261] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_2_extracted.bag\n'}
+[19.463405] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_9.bag\n'}
+[19.463546] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/negative_4.bag\n'}
+[19.463684] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/rosbag/training_scans_res=0.33/positive_1_extracted.bag\n'}
+[19.463823] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config\n'}
+[19.463962] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/config/trained_leg_detector_res=0.33.yaml\n'}
+[19.464111] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/lib/leg_detector/joint_leg_tracker.py\n'}
+[19.464230] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/package_run_dependencies/leg_detector\n'}
+[19.464421] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/parent_prefix_path/leg_detector\n'}
+[19.464538] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.sh\n'}
+[19.464688] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/ament_prefix_path.dsv\n'}
+[19.465113] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.sh\n'}
+[19.465241] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/environment/path.dsv\n'}
+[19.465359] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.bash\n'}
+[19.465475] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.sh\n'}
+[19.465593] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.zsh\n'}
+[19.465710] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/local_setup.dsv\n'}
+[19.465827] (leg_detector) StdoutLine: {'line': b'-- Installing: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.dsv\n'}
+[19.465946] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/ament_index/resource_index/packages/leg_detector\n'}
+[19.466081] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig.cmake\n'}
+[19.466198] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/cmake/leg_detectorConfig-version.cmake\n'}
+[19.466316] (leg_detector) StdoutLine: {'line': b'-- Up-to-date: /home/hhd/legdet_ws/install/leg_detector/share/leg_detector/package.xml\n'}
+[19.466449] (leg_detector) CommandEnded: {'returncode': 0}
+[19.525895] (leg_detector) JobEnded: {'identifier': 'leg_detector', 'rc': 0}
+[19.528068] (-) EventReactorShutdown: {}

@@ -43,6 +43,8 @@ struct Person_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->id = 0ul;
+      this->vx = 0.0f;
+      this->vy = 0.0f;
     }
   }
 
@@ -53,6 +55,8 @@ struct Person_
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
       this->id = 0ul;
+      this->vx = 0.0f;
+      this->vy = 0.0f;
     }
   }
 
@@ -63,6 +67,12 @@ struct Person_
   using _id_type =
     uint32_t;
   _id_type id;
+  using _vx_type =
+    float;
+  _vx_type vx;
+  using _vy_type =
+    float;
+  _vy_type vy;
 
   // setters for named parameter idiom
   Type & set__pose(
@@ -75,6 +85,18 @@ struct Person_
     const uint32_t & _arg)
   {
     this->id = _arg;
+    return *this;
+  }
+  Type & set__vx(
+    const float & _arg)
+  {
+    this->vx = _arg;
+    return *this;
+  }
+  Type & set__vy(
+    const float & _arg)
+  {
+    this->vy = _arg;
     return *this;
   }
 
@@ -124,6 +146,12 @@ struct Person_
       return false;
     }
     if (this->id != other.id) {
+      return false;
+    }
+    if (this->vx != other.vx) {
+      return false;
+    }
+    if (this->vy != other.vy) {
       return false;
     }
     return true;

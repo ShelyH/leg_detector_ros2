@@ -45,7 +45,7 @@ def generate_launch_description():
         name="joint_leg_tracker",
         parameters=[
             {"scan_topic" : "/scan"},
-            {"fixed_frame" : "odom"},
+            {"fixed_frame" : "rplidar_link"},
             {"scan_frequency" : 10}
         ]    
     )
@@ -67,7 +67,7 @@ def generate_launch_description():
         name="local_occupancy_grid_mapping",
         parameters=[
             {"scan_topic" : "/scan"},
-            {"fixed_frame" : "odom"},
+            {"fixed_frame" : "rplidar_link"},
         ]
     )
 

@@ -233,7 +233,6 @@ class KalmanMultiTrackerNode(Node):
     @return:    degree to which the position (x,y) is in freespace (range: 0.-1.)
     """
     def how_much_in_free_space(self, x, y):
-
         # If we haven't got the local map yet, assume nothing's in freespace
         if self.local_map == None:
             return self.in_free_space_threshold*2
@@ -666,19 +665,28 @@ class KalmanMultiTrackerNode(Node):
                         except:
                             self.get_logger().error("Not publishing people due to no transform from fixed_frame-->publish_people_frame")
                             continue
-                        # self.get_logger().info("people po:%d, %d"%(ps.point.x, ps.point.y))
+                        # self.get_logger().info("people po:%.2f, %.2f"%(person.vel_x, person.vel_y))
+                        # self.get_logger().info("people po:%.2f, %.2f" % (float(person.vel_x), float(person.vel_y)))
+                        speed = (person.vel_x ** 2 + person.vel_y ** 2) ** 0.5
+                        self.get_logger().info("person.id_num: %d, Square root of the sum of squares of velocities: %.2f" % (person.id_num, speed))
+                        
+
                         # pulish to people_tracked topic
                         new_person = Person()
                         new_person.pose.position.x = ps.point.x
                         new_person.pose.position.y = ps.point.y 
                         yaw = math.atan2(person.vel_y, person.vel_x)
+                        # self.get_logger().info("%.2f"%person.vel_x)
+                        new_person.vx=float(person.vel_x)
+                        new_person.vy=float(person.vel_y)
+
                         quaternion = self.ToQuaternion(yaw, 0, 0)
                         new_person.pose.orientation.x = quaternion.x
                         new_person.pose.orientation.y = quaternion.y
                         new_person.pose.orientation.z = quaternion.z
                         new_person.pose.orientation.w = quaternion.w
                         new_person.id = person.id_num
-                        self.get_logger().info("people po:%d, %d, %d"%(new_person.id, new_person.pose.position.x, new_person.pose.position.y))
+                        # self.get_logger().info("people po:%d, %d, %d"%(new_person.id, new_person.pose.position.x, new_person.pose.position.y))
                         people_tracked_msg.people.append(new_person)
 
                         # publish rviz markers       

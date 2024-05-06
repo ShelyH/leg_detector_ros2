@@ -61,6 +61,10 @@ cdr_serialize(
     cdr);
   // Member: id
   cdr << ros_message.id;
+  // Member: vx
+  cdr << ros_message.vx;
+  // Member: vy
+  cdr << ros_message.vy;
   return true;
 }
 
@@ -76,6 +80,12 @@ cdr_deserialize(
 
   // Member: id
   cdr >> ros_message.id;
+
+  // Member: vx
+  cdr >> ros_message.vx;
+
+  // Member: vy
+  cdr >> ros_message.vy;
 
   return true;
 }
@@ -101,6 +111,18 @@ get_serialized_size(
   // Member: id
   {
     size_t item_size = sizeof(ros_message.id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: vx
+  {
+    size_t item_size = sizeof(ros_message.vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // Member: vy
+  {
+    size_t item_size = sizeof(ros_message.vy);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -136,6 +158,22 @@ max_serialized_size_Person(
   }
 
   // Member: id
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: vx
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: vy
   {
     size_t array_size = 1;
 

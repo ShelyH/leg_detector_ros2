@@ -74,6 +74,24 @@ bool leg_detector_msgs__msg__person__convert_from_py(PyObject * _pymsg, void * _
     ros_message->id = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
+  {  // vx
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vx");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->vx = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
+  {  // vy
+    PyObject * field = PyObject_GetAttrString(_pymsg, "vy");
+    if (!field) {
+      return false;
+    }
+    assert(PyFloat_Check(field));
+    ros_message->vy = (float)PyFloat_AS_DOUBLE(field);
+    Py_DECREF(field);
+  }
 
   return true;
 }
@@ -115,6 +133,28 @@ PyObject * leg_detector_msgs__msg__person__convert_to_py(void * raw_ros_message)
     field = PyLong_FromUnsignedLong(ros_message->id);
     {
       int rc = PyObject_SetAttrString(_pymessage, "id", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // vx
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->vx);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "vx", field);
+      Py_DECREF(field);
+      if (rc) {
+        return NULL;
+      }
+    }
+  }
+  {  // vy
+    PyObject * field = NULL;
+    field = PyFloat_FromDouble(ros_message->vy);
+    {
+      int rc = PyObject_SetAttrString(_pymessage, "vy", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

@@ -1,0 +1,56 @@
+[0.014s] Invoking command in '/home/hhd/legdet_ws/build/leg_detector_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector_msgs -- -j12 -l12
+[0.048s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.072s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[0.072s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.133s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[0.136s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.139s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.279s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.297s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[0.394s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[0.565s] CMake Error at /opt/ros/galactic/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:60 (message):
+[0.565s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.565s]   leg_detector_msgs --arguments-file
+[0.566s]   /home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter__arguments__leg_detector_msgs.json
+[0.566s]   --output-dir
+[0.566s]   /home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs
+[0.566s]   --output-file
+[0.566s]   /home/hhd/legdet_ws/build/leg_detector_msgs/rosidl_adapter/leg_detector_msgs.idls)
+[0.566s]   returned error code 1:
+[0.566s] 
+[0.566s]   Error processing 'float v_x' of 'leg_detector_msgs/Person': ''float' is an
+[0.566s]   invalid message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[0.567s] 
+[0.567s]   Traceback (most recent call last):
+[0.567s] 
+[0.567s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[0.567s]       return _run_code(code, main_globals, None,
+[0.567s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[0.567s]       exec(code, run_globals)
+[0.568s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.568s]       sys.exit(main())
+[0.568s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.568s]       abs_idl_file = convert_to_idl(
+[0.568s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.568s]       return convert_msg_to_idl(
+[0.568s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.568s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.569s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 516, in parse_message_string
+[0.569s]       Type(type_string, context_package_name=pkg_name),
+[0.569s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 276, in __init__
+[0.569s]       super(Type, self).__init__(
+[0.569s]     File "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 204, in __init__
+[0.569s]       raise InvalidResourceName(
+[0.569s] 
+[0.569s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[0.570s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.570s] 
+[0.570s] Call Stack (most recent call first):
+[0.570s]   /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[0.570s]   CMakeLists.txt:20 (rosidl_generate_interfaces)
+[0.570s] 
+[0.570s] 
+[0.570s] -- Configuring incomplete, errors occurred!
+[0.570s] See also "/home/hhd/legdet_ws/build/leg_detector_msgs/CMakeFiles/CMakeOutput.log".
+[0.571s] make: *** [Makefile:1468：cmake_check_build_system] 错误 1
+[0.573s] Invoked command in '/home/hhd/legdet_ws/build/leg_detector_msgs' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/hhd/drl_ros2/turtlebot3_drlnav/install/turtlebot3_drl:/home/hhd/.ros2_ws/install/qr_track_alvar:/opt/ros/galactic CONDA_PROMPT_MODIFIER=(peopleros2) /usr/bin/cmake --build /home/hhd/legdet_ws/build/leg_detector_msgs -- -j12 -l12

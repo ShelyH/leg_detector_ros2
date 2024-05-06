@@ -12,6 +12,10 @@ module leg_detector_msgs {
       geometry_msgs::msg::Pose pose;
 
       uint32 id;
+
+      float vx;
+
+      float vy;
     };
   };
 };

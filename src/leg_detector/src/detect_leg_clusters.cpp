@@ -47,7 +47,7 @@ public:
         this->declare_parameter("max_detected_clusters");
 
         this->get_parameter_or("scan_topic", scan_topic, std::string("/scan"));
-        this->get_parameter_or("fixed_frame", fixed_frame_, std::string("rplidar_link"));
+        this->get_parameter_or("fixed_frame", fixed_frame_, std::string("odom"));
         this->get_parameter_or("forest_file", forest_file, std::string("./src/leg_detector/config/trained_leg_detector_res=0.33.yaml"));
         this->get_parameter_or("detection_threshold", detection_threshold_, -1.0);
         this->get_parameter_or("cluster_dist_euclid", cluster_dist_euclid_, 0.13);
@@ -132,6 +132,7 @@ private:
      *
      * Called every time a laser scan is published.
      */
+    
     void laserCallback(const sensor_msgs::msg::LaserScan::SharedPtr scan) {
         laser_processor::ScanProcessor processor(*scan);
         processor.splitConnected(cluster_dist_euclid_);
@@ -295,6 +296,7 @@ private:
     /**
      * @brief Comparison class to order Legs according to their relative distance to the laser scanner
      **/
+    
     class CompareLegs {
     public:
         bool operator()(const leg_detector_msgs::msg::Leg &a, const leg_detector_msgs::msg::Leg &b) const {

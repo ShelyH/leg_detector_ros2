@@ -26,6 +26,8 @@ typedef struct leg_detector_msgs__msg__Person
 {
   geometry_msgs__msg__Pose pose;
   uint32_t id;
+  float vx;
+  float vy;
 } leg_detector_msgs__msg__Person;
 
 // Struct for a sequence of leg_detector_msgs__msg__Person.

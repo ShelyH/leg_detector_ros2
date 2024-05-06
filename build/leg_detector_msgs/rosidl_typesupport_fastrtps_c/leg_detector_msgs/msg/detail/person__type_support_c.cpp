@@ -82,6 +82,16 @@ static bool _Person__cdr_serialize(
     cdr << ros_message->id;
   }
 
+  // Field name: vx
+  {
+    cdr << ros_message->vx;
+  }
+
+  // Field name: vy
+  {
+    cdr << ros_message->vy;
+  }
+
   return true;
 }
 
@@ -113,6 +123,16 @@ static bool _Person__cdr_deserialize(
     cdr >> ros_message->id;
   }
 
+  // Field name: vx
+  {
+    cdr >> ros_message->vx;
+  }
+
+  // Field name: vy
+  {
+    cdr >> ros_message->vy;
+  }
+
   return true;
 }  // NOLINT(readability/fn_size)
 
@@ -137,6 +157,18 @@ size_t get_serialized_size_leg_detector_msgs__msg__Person(
   // field.name id
   {
     size_t item_size = sizeof(ros_message->id);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name vx
+  {
+    size_t item_size = sizeof(ros_message->vx);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
+  // field.name vy
+  {
+    size_t item_size = sizeof(ros_message->vy);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -176,6 +208,20 @@ size_t max_serialized_size_leg_detector_msgs__msg__Person(
     }
   }
   // member: id
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: vx
+  {
+    size_t array_size = 1;
+
+    current_alignment += array_size * sizeof(uint32_t) +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+  // member: vy
   {
     size_t array_size = 1;
 

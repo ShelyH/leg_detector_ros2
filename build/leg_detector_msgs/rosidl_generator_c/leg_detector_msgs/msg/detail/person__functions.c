@@ -25,6 +25,8 @@ leg_detector_msgs__msg__Person__init(leg_detector_msgs__msg__Person * msg)
     return false;
   }
   // id
+  // vx
+  // vy
   return true;
 }
 
@@ -37,6 +39,8 @@ leg_detector_msgs__msg__Person__fini(leg_detector_msgs__msg__Person * msg)
   // pose
   geometry_msgs__msg__Pose__fini(&msg->pose);
   // id
+  // vx
+  // vy
 }
 
 bool
@@ -53,6 +57,14 @@ leg_detector_msgs__msg__Person__are_equal(const leg_detector_msgs__msg__Person *
   }
   // id
   if (lhs->id != rhs->id) {
+    return false;
+  }
+  // vx
+  if (lhs->vx != rhs->vx) {
+    return false;
+  }
+  // vy
+  if (lhs->vy != rhs->vy) {
     return false;
   }
   return true;
@@ -74,6 +86,10 @@ leg_detector_msgs__msg__Person__copy(
   }
   // id
   output->id = input->id;
+  // vx
+  output->vx = input->vx;
+  // vy
+  output->vy = input->vy;
   return true;
 }
 

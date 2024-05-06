@@ -37,7 +37,7 @@ void Person_fini_function(void * message_memory)
   typed_message->~Person();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_message_member_array[2] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_message_member_array[4] = {
   {
     "pose",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
@@ -67,13 +67,43 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember Person_messag
     nullptr,  // get_const(index) function pointer
     nullptr,  // get(index) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "vx",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(leg_detector_msgs::msg::Person, vx),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
+    "vy",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_FLOAT,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(leg_detector_msgs::msg::Person, vy),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers Person_message_members = {
   "leg_detector_msgs::msg",  // message namespace
   "Person",  // message name
-  2,  // number of fields
+  4,  // number of fields
   sizeof(leg_detector_msgs::msg::Person),
   Person_message_member_array,  // message members
   Person_init_function,  // function to initialize message memory (memory has to be allocated)
